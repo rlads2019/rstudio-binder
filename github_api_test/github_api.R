@@ -1,4 +1,4 @@
-tk <- '6b478973c8dc2d3ab9bd0a0d8d245db87aac9c31'
+tk <- '18ae10911ee73e776424742073ca43a17a113ad4'
 repos <- gh::gh('/user/repos', .token = tk)
 
 # Create new repo
