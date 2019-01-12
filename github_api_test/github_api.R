@@ -1,7 +1,8 @@
-tk <- 'b84e27b38e2bcee15f31064f328698134c6adee3'
+source('decrypt-token.R')
+tk <- decrypt('<ask-me-password>')
+
 
 repos <- gh::gh('/user/repos', .token = tk)
-
 # Create new repo
 new_repo <- gh("POST /user/repos", name = "github-api-test", .token = tk)
 
